@@ -2,8 +2,8 @@
 
 let parola = prompt('parola da controllare');
 function palindroma(parola) {
-    const revers = parola.split('').reverse().join('');
-    return parola === revers;
+    const reversp = parola.split('').reverse().join('');
+    return parola === reversp;
 }
 console.log(palindroma(parola));
 
@@ -20,7 +20,7 @@ console.log(numeroComputer);
 function sommaNumeri(numero, numeroComputer) {
     return numero + numeroComputer
 }
-//controllo se è pari così da poter stabilire il vincitore
+//controllo se è pari così da poter stabilire il vincitore 
 if (sommaNumeri(numero, numeroComputer) % 2 === 0) {      
     console.log('pari');
 } else{
