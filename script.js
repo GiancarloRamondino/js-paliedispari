@@ -21,10 +21,18 @@ function sommaNumeri(numero, numeroComputer) {
     return numero + numeroComputer
 }
 //controllo se è pari così da poter stabilire il vincitore
-if (sommaNumeri(numero, numeroComputer) %= 2 === 0) {      
-    console.log('pari')
+if (sommaNumeri(numero, numeroComputer) % 2 === 0) {      
+    console.log('pari');
 } else{
-    console.log('dispari')
+    console.log('dispari');
+}
+//stabilisco il vincitore
+if (scelta === 'pari' && sommaNumeri(numero, numeroComputer) % 2 === 0){
+    console.log('Hai vinto');
+}else if (scelta === 'dispari' && sommaNumeri(numero, numeroComputer) % 2 !== 0){
+    console.log('Hai vinto');
+}else {
+    console.log('Hai perso');
 }
 
 
