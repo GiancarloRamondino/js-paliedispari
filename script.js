@@ -2,8 +2,8 @@
 
 let parola = prompt('parola da controllare');
 function palindroma(parola) {
-    const reversp = parola.split('').reverse().join('');
-    return parola === reversp;
+    const reversp = parola.split('').reverse().join(''); //divido le lettere le inveerto e le riunisco
+    return parola === reversp; // confronto le lettere se  sono uguali ritorno truee o false oppure uso un if/else
 }
 console.log(palindroma(parola));
 
@@ -12,7 +12,7 @@ let scelta = prompt('Scegli pari o dispari?');
 let numero = parseInt(prompt('Inserisci un numero da 1 a 5'));
 //genero per il computer
 function numeroRandom(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min); //più semplice  *5) +1
 }
 let numeroComputer = numeroRandom(1, 5);
 console.log(numeroComputer);
